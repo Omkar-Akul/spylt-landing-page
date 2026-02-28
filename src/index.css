@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
     }
 
     p {
-      @apply text-center font-paragraph;
+      @apply text-center md:max-w-96 overflow-hidden justify-center items-center font-paragraph;
     }
 
     h1,
