@@ -19,7 +19,7 @@ const HeroSection = () => {
       ease:"power1.inOut",
     }).to(".hero-text-scroll",{
       duration:1,
-       duration: 1,
+       
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
           ease: "circ.out",  
     },"-=0.5") .from(

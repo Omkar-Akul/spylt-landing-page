@@ -12,7 +12,9 @@ gsap.registerPlugin(ScrollTrigger);
 const FlavourSlider = () => {
   const sliderRef = useRef(null);
 
-  useGSAP (()=> {
+
+  useGSAP(() => {
+
       const titleTl = gsap.timeline({
       scrollTrigger: {
         trigger: ".flavour-section",
@@ -43,8 +45,7 @@ const FlavourSlider = () => {
         },
         "<"
       );
-  });
-  useGSAP(() => {
+
     const mm = gsap.matchMedia();
 
     // ✅ ONLY LAPTOP / DESKTOP
