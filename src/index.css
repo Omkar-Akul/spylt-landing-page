@@ -121,10 +121,10 @@ body::-webkit-scrollbar {
     }
   }
 
-  .flavor-section {
+  .flavour-section {
     @apply min-h-dvh bg-milk;
 
-    .flavor-text-scroll {
+    .flavour-text-scroll  {
       @apply rotate-[-3deg] md:translate-y-5 border-[.5vw] border-milk absolute z-10;
     }
 
