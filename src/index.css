@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
     }
 
     .slider-wrapper {
-      @apply lg:h-dvh min-h-full pb-8 md:min-h-fit w-full mt-0 md:mt-20 xl:mt-0;
+      @apply lg:h-dvh min-h-full md:min-h-fit w-full mt-0 md:mt-20 xl:mt-0;
 
       .flavors {
         @apply h-full w-full flex flex-col lg:flex-row items-center 2xl:gap-52 lg:gap-24 md:gap-7 gap-4 flex-nowrap;
