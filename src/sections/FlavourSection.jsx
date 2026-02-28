@@ -1,5 +1,5 @@
 import FlavourTitle from "../components/FlavourTitle";
-import FlavourSlider from "../components/FlavourSlider";
+import FlavouSlider from "../components/FlavourSlider"
 
 const FlavourSection = () => {
   return (
@@ -9,7 +9,7 @@ const FlavourSection = () => {
           <FlavourTitle />
         </div>
         <div className="h-full">
-          <FlavourSlider />
+          <FlavouSlider />
         </div>
       </div>
     </section>

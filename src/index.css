@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
         }
 
         .elements {
-          @apply absolute md:top-0 md:bottom-auto bottom-10 w-full;
+          @apply absolute md:top-0  md:bottom-auto bottom-10 w-full;
         }
 
         h1 {
