@@ -140,7 +140,7 @@ body::-webkit-scrollbar {
       @apply lg:h-dvh min-h-full md:min-h-fit w-full mt-0 md:mt-20 xl:mt-0;
 
       .flavors {
-        @apply h-full w-full flex flex-col lg:flex-row items-center 2xl:gap-52 lg:gap-24 md:gap-7 gap-4 flex-nowrap;
+        @apply h-full w-full flex flex-col lg:flex-row items-center 2xl:gap-72 lg:gap-52 md:gap-32 gap-7 flex-nowrap md:pb-32;
 
         .drinks {
           @apply absolute left-1/2 -translate-x-1/2 bottom-0 md:h-full h-80;
