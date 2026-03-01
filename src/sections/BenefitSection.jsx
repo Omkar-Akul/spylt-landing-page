@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react"
 import ClipPathTitle from "../components/ClipPathTitle"
 import gsap from "gsap"
+import VideoPinSection from "../components/VideoPinSection"
 const BenefitSection = () => {
   useGSAP(() => {
     const revealTl = gsap.timeline({
@@ -71,6 +72,9 @@ const BenefitSection = () => {
           <p>and much more ... </p>
         </div>
       </div>
+    </div>
+    <div className="relative overflow-box">
+      <VideoPinSection />
     </div>
    </section>
   )
