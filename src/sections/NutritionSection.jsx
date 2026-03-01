@@ -23,7 +23,45 @@ const NutritionSection = () => {
     }
   }, [isMobile]);
 
- 
+ useGSAP(() => {
+  const titleSplit = SplitText.create(".nutrition-title",{
+    type:"chars"
+  });
+  const paragraphSplit = SplitText.create(".nutrition-section p",{
+    type:"words, lines",
+    linesClass:"paragraph-line",
+  });
+  const contentTl = gsap.timeline({
+    scrollTrigger:{
+      trigger:".nutrition-section",
+      start:"top center",
+      
+    },
+  });
+  contentTl.from(titleSplit.chars,{
+    yPercent:300,
+    stagger:0.02,
+    ease:"power2.inOut",
+  }).from(paragraphSplit.words,{
+    yPercent:300,
+    rotate:3,
+    ease:"power1.inOut",
+    duration:1,
+    stagger:0.01,
+  });
+  const titleTl = gsap.timeline({
+    scrollTrigger:{
+      trigger:".nutrition-section",
+      start:"top 80%"
+    }
+  });
+  titleTl.to(".nutrition-text-scroll",{
+    duration:1,
+    opacity:1,
+    clipPath: "polygon(100% 0, 0 0, 0 100%, 100% 100%)",
+    ease: "power1.inOut",
+  });
+ });
   
   return (
     <section className="nutrition-section">
