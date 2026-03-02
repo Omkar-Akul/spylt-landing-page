@@ -21,7 +21,7 @@ const VideoPinSection = () => {
     tl.to({}, {duration:4});
 
     tl.fromTo(".testimonials-section",
-      {yPercent:0},
+      {yPercent:10},
       {yPercent:0, ease:"none", duration:1}
     );
 
@@ -30,7 +30,7 @@ const VideoPinSection = () => {
       {clipPath:"circle(6% at 50% 50%)"},
       {clipPath:"circle(100% at 50% 50%)",
         ease:"none",
-        duration:1,
+        duration:2,
       },
       0
       );
