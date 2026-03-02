@@ -9,21 +9,35 @@ const VideoPinSection = () => {
   })
 
   useGSAP(() => {
-    if(!isMobile){
+    
       const tl = gsap.timeline({
       scrollTrigger:{
         trigger:".vd-pin-section",
         start:"-15% top",
-        end:"120% top",
+        end:"+=180%",
         scrub:1.5,
         pin:true,
+        pinSpacing:false,
       },
     });
-    tl.to(".video-box",{
-      clipPath:"circle(100% at 50% 50%)",
-      ease:"power1.InOut"
-    });
+    tl.to({}, {duration:4});
+
+    tl.fromTo(".testimonials-section",
+      {yPercent:1},
+      {yPercent:0, ease:"none", duration:1}
+    );
+    if (!isMobile) {
+      tl.fromTo(
+      ".video-box",
+      {clipPath:"circle(6% at 50% 50%)"},
+      {clipPath:"circle(100% at 50% 50%)",
+        ease:"none",
+        duration:1,
+      },
+      0
+      );
     }
+  
   });
 
   return <section className="vd-pin-section">
