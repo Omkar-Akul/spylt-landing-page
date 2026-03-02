@@ -4,9 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 const VideoPinSection = () => {
 
-  const isMobile = useMediaQuery({
-    query:"(max-width: 768px)",
-  })
+
 
   useGSAP(() => {
     
@@ -26,7 +24,7 @@ const VideoPinSection = () => {
       {yPercent:1},
       {yPercent:0, ease:"none", duration:1}
     );
-    if (!isMobile) {
+
       tl.fromTo(
       ".video-box",
       {clipPath:"circle(6% at 50% 50%)"},
@@ -36,15 +34,15 @@ const VideoPinSection = () => {
       },
       0
       );
-    }
+    
   
   });
 
   return <section className="vd-pin-section">
         <div style={{
-          clipPath:  isMobile
-            ? "circle(100% at 50% 50%)"
-            : "circle(6% at 50% 50%)",
+          clipPath: 
+           
+            "circle(6% at 50% 50%)",
         }} className="size-full video-box">
           <video src="/videos/pin-video.mp4" playsInline muted loop autoPlay />
           <div className="abs-center md:scale-100 scale-200">
