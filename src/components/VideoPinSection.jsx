@@ -21,7 +21,7 @@ const VideoPinSection = () => {
     tl.to({}, {duration:4});
 
     tl.fromTo(".testimonials-section",
-      {yPercent:1},
+      {yPercent:0},
       {yPercent:0, ease:"none", duration:1}
     );
 
